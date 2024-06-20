@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div className="about__text">
           <p>
-            Je m'appelle Caroline et je suis developpeuse junior depuis peu. Je
+            Je m'appelle Caroline et je suis developpeuse junior. Je
             suis passionnée par le monde de la tech et particulierement du
             developpement web dont j'ai choisi d'en faire mon métier suite à une
             reconversion professionnelle. Je suis actuellement à la recherche
