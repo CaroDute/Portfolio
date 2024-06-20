@@ -1,0 +1,86 @@
+.header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+
+  &__name {
+    width: 15%;
+  }
+
+  &__firstName {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__lastName {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &__details {
+    text-align: center;
+    font-size: 10px;
+
+    &--color {
+      color: $purple-color;
+    }
+  }
+
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          position: relative;
+
+          &::after {
+            content: ""; /* Contenu du pseudo-élément */
+            position: absolute; /* Position absolue par rapport au lien */
+            bottom: 4px; /* Déplace le pseudo-élément vers le haut de 4 pixels */
+            left: 0%; /* Commence la ligne au début du lien */
+            width: 0%; /* Longueur de la ligne à zéro avant le hover */
+            border-bottom: 8px solid transparent; /* Style de la ligne */
+            z-index: -1;
+            transition: width 0.3s ease; /* Transition pour l'animation de la largeur */
+          }
+
+          &:hover::after {
+            width: 60%; /* Agrandit la ligne au survol */
+          }
+        }
+
+        &:nth-child(1) a::after {
+          border-color: $pink-color;
+        }
+
+        &:nth-child(2) a::after {
+          border-color: $green-color;
+        }
+
+        &:nth-child(3) a::after {
+          border-color: $blue-color;
+        }
+
+        &:nth-child(4) a::after {
+          border-color: $purple-color;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    width: 100px;
+  }
+}
