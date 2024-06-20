@@ -1,30 +1,6 @@
-import { useEffect } from "react";
-import LogoHeader from "./LogoHeader";
-import { useState } from "react";
-
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-
-      if (scrollTop > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-  });
-
   return (
-    <div
-      className={`main-container header ${
-        isScrolled ? "header__isScrolled" : ""
-      }`}
-    >
+    <div className="main-container header">
       <div className="header__name">
         <p className="header__firstName">Caroline</p>
         <p className="header__lastName">Duteurtre</p>
@@ -35,20 +11,19 @@ const Header = () => {
       <nav className="header__nav">
         <ul>
           <li>
-            <a href="#aboutMe">About me</a>
+            <a href="#aboutMe">&lt; About me &gt;</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">&#123; Skills &#125;</a>
           </li>
           <li>
-            <a href="#projetcs">Projects</a>
+            <a href="#projetcs"> &#91; Projects &#93; </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">&#40; Contact &#41;</a>
           </li>
         </ul>
       </nav>
-      <LogoHeader src="./src/assets/images/LogoHeader.png" alt="Logo CD" />
     </div>
   );
 };

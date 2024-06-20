@@ -1,14 +1,15 @@
 .header {
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 0;
-
-  &__isScrolled {
-    background-color: rgb(34, 34, 34);
-  }
-  
+  top: 0px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(
+    $background-color,
+    0.5
+  ); // Utilisation de rgba pour l'opacité
+  padding: 10px 0;
+  z-index: 1000;
 
   &__name {
     width: 15%;
@@ -36,11 +37,9 @@
   // Barre de navigation
 
   &__nav {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     ul {
       display: flex;
@@ -67,7 +66,7 @@
           }
 
           &:hover::after {
-            width: 60%; /* Agrandit la ligne au survol */
+            width: 100%; /* Agrandit la ligne au survol */
           }
         }
 
