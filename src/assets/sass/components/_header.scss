@@ -4,10 +4,7 @@
   position: sticky;
   top: 0px;
   backdrop-filter: blur(6px);
-  background-color: rgba(
-    $background-color,
-    0.5
-  ); // Utilisation de rgba pour l'opacité
+  background-color: rgba($background-color, 0.5);
   padding: 10px 0;
   z-index: 1000;
 
@@ -27,7 +24,8 @@
 
   &__details {
     text-align: center;
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 200;
 
     &--color {
       color: $purple-color;
