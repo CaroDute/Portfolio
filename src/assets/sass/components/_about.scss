@@ -18,11 +18,19 @@
   &__text {
     position: absolute;
     left: 350px;
-    top: 180px;
+    top: 130px;
     right: 180px;
     line-height: 1.7;
-    transition: width 0.3 ease;
     padding-left: 20px;
+
+    &--title {
+      padding-bottom: 15px;
+      font-size: 34px;
+      padding-left: 150px;
+      position: relative;
+      overflow: hidden;
+      animation: arrival 4s forwards;
+    }
   }
 
   &__text::before {
@@ -36,16 +44,16 @@
   }
 
   &::before {
-    content: '<p>'; /* Contenu textuel à placer après la ligne */
+    content: "<p>"; /* Contenu textuel à placer après la ligne */
     position: absolute;
     top: 170px;
     right: 95px; /* Décalage du texte '<p>' par rapport à la ligne */
     font-size: 20px; /* Taille de la police du texte */
-    color: $green-color
+    color: $green-color;
   }
 
   &::after {
-    content: '</p>'; /* Contenu textuel à placer après la ligne */
+    content: "</p>"; /* Contenu textuel à placer après la ligne */
     position: absolute;
     bottom: 155px;
     right: 85px; /* Décalage du texte '<p>' par rapport à la ligne */
@@ -59,8 +67,9 @@
   justify-content: center;
 
   &__arrow {
-    width: 60px;
-    padding-top: 60px;
+    cursor: pointer;
+    width: 40px;
+    padding-top: 40px;
     align-items: center;
     animation: arrow-animation 1s infinite ease-in-out;
   }

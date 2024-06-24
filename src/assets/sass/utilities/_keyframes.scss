@@ -1,5 +1,17 @@
+@keyframes arrival {
+  from {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(50px);
+    opacity: 1;
+  }
+}
+
 @keyframes arrow-animation {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
