@@ -21,7 +21,7 @@ const ProjectsCard = ({ cover, title, url }) => {
             <img src={cover} alt={title} />
           </div>
           <div className="cards__single--details">
-            {hovered ? <p className="cards__single--details-hover">Voir plus</p> : <h2>{title}</h2>}
+            {hovered ? <p className="cards__single--details-hover">Voir plus</p> : <h2 className="cards__title">{title}</h2>}
           </div>
         </div>
       </div>
