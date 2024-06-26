@@ -1,24 +1,30 @@
+import { useState } from "react";
+
 /* eslint-disable react/prop-types */
-const ProjectsCard = ({ cover, title, langage, url }) => {
+const ProjectsCard = ({ cover, title, url }) => {
+  const [hovered, setHovered] = useState(false)
+
+  const handleMouseEnter = () => {
+    setHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setHovered(false)
+  }
+
   return (
-    <div className="cards__single">
-      <div className="cards__single--content">
-        <div className="cards__single--img">
-          <img src={cover} alt={title} />
-        </div>
-        <div className="cards__single--details">
-          <p>{title}</p>
-          <div className="cards__single--langages">
-            {langage.map((lang, index) => (
-              <img key={index} src={lang.iconUrl} alt={lang.name} />
-            ))}
+    <a href={url} target="_blank" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="cards__single">
+        <div className="cards__single--content">
+          <div className="cards__single--img">
+            <img src={cover} alt={title} />
           </div>
-          <a href={url} target="_blank">
-            <i className="fa-solid fa-link"></i>
-          </a>
+          <div className="cards__single--details">
+            {hovered ? <p className="cards__single--details-hover">Voir plus</p> : <h2>{title}</h2>}
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 

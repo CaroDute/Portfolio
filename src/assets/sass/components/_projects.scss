@@ -3,6 +3,12 @@
   margin: auto;
   width: 100%;
   max-width: 1224px;
+
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+  }
 }
 
 .cards {
@@ -13,14 +19,16 @@
   width: 100%;
   margin: 0 auto;
 
-  &__single {
+  a {
     width: calc(33.33% - 40px);
-    background-color: $background-color;
-    border-radius: 20px;
-    padding: 5px;
+    background-color: rgba(136, 136, 136, 0.05);
+    border-radius: 10px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     overflow-wrap: break-word;
+    position: relative;
+  }
 
+  &__single {
     &--content {
       width: 100%;
     }
@@ -35,24 +43,25 @@
     }
 
     &--details {
-      padding: 10px ;
-
-      a {
-        color: $pink-color;
-      }
-    }
-
-    &--langages {
-      display: flex;
-      gap: 10px;
-
-      i {
-        font-size: 40px;
-        color: $green-color;
+      padding: 5px 20px 10px 20px;
+      pointer-events: none;
+      p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.5;
+        display: flex;
+        justify-content: end;
       }
 
-      img {
-        width: 45px;
+      p::after {
+        content: "";
+        position: absolute;
+        bottom: 21px;
+        left: 100px;
+        width: 30%;
+        height: 2px;
+        background-color: #e84175;
       }
     }
   }

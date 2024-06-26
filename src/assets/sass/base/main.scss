@@ -6,7 +6,6 @@
 @import "/src/assets/sass/components/about.scss";
 @import "/src/assets/sass/components/projects.scss";
 
-
 * {
   font-family: "Roboto mono", sans-serif;
   margin: 0;
@@ -14,18 +13,11 @@
   box-sizing: border-box;
 }
 
-body,
-html {
-  height: 100%;
-  min-height: 100vh;
-}
-
 body {
   display: flex;
   flex-direction: column;
   color: white;
-  background-image: url(/src/assets/images/Background.png);
-  background-repeat: no-repeat;
+  background-color: $background-color;
 }
 
 img {
@@ -33,7 +25,12 @@ img {
 }
 
 main {
-  margin: 0 100px 0 100px;
-  min-height: 100%;
-  
+  margin: 0 auto;
+  padding: 0 100px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
