@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 import About from "/src/components/About";
 import Header from "/src/components/Header";
 
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <main>
         <About />
+        <Projects />
       </main>
       <Footer />
     </>
