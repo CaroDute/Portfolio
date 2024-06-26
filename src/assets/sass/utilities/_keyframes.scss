@@ -12,9 +12,42 @@
 @keyframes arrow-animation {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(-20px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes card-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+
+@keyframes about-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes about-animation-p {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

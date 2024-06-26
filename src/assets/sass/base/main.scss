@@ -1,6 +1,8 @@
 @import "/src/assets/sass/utilities/variables.scss";
 @import "/src/assets/sass/utilities/keyframes";
 
+@import 'aos/dist/aos.css';
+
 @import "/src/assets/sass/components/header.scss";
 @import "/src/assets/sass/components/footer.scss";
 @import "/src/assets/sass/components/about.scss";

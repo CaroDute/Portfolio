@@ -5,16 +5,23 @@
   top: 0px;
   backdrop-filter: blur(6px);
   background-color: rgba($background-color, 0.5);
-  padding: 10px 0;
+  padding: 10px 30px;
   z-index: 1000;
+
+  &__title {
+    text-align: center;
+    display: block;
+    width: 50%;
+  }
+
 
   &__name {
     width: 15%;
+    text-align: center;
   }
 
   &__firstName {
     font-weight: 700;
-    text-align: center;
   }
 
   &__lastName {
