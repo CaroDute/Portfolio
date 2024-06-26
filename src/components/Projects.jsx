@@ -1,15 +1,28 @@
 import ProjectsCard from "./ProjectsCard";
 import projects from "/public/projects.json";
+import ModalProject from "./ModalProject";
 import { useEffect } from "react";
+import { useState } from "react";
 import AOS from "aos";
 
 const Projects = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
   return (
     <div className="projects" id="projets">
+      {modalOpen && <ModalProject closeModal={closeModal} />}
       <h2 className="projects__title">&#47;&#47; PROJETS</h2>
       <div className="cards">
         {projects.map((project, index) => (
@@ -22,12 +35,12 @@ const Projects = () => {
             <ProjectsCard
               cover={project.cover}
               title={project.title}
-              langage={project.langage}
-              url={project.url}
+              openModal={openModal}
             />
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
