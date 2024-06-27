@@ -24,7 +24,7 @@
   "url":"",
   "github":"https://github.com/CaroDute/Projet-4--OhmyFood",
   "cover":"./src/assets/images/projectsCover/ohmyfoodCover.png",
-  "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS",
+  "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS. Intégration d'une maquette en mobile-first. Utilisation de SASS, pré-processeur CSS. Utilisation de Git et Github pour versionner le projet.",
   "skillsTitle": "Skills",
   "skills": [
     {
@@ -47,7 +47,7 @@
   "url":"https://carodute.github.io/Projet-5--PrintIt-/",
   "github":"https://github.com/CaroDute/Projet-5--PrintIt-",
   "cover":"./src/assets/images/projectsCover/printitCover.png",
-  "descriptions":"Mise en place d'un Carrousel interactif",
+  "descriptions":"Premier pas sur Javascript avec la mise en place d'un carrousel interactif. Mise à jour du code existant HTML et ajout du carrousel en Javascript.",
   "skillsTitle": "Skills",
   "skills": [
     {
@@ -62,7 +62,7 @@
   "url":"",
   "github":"https://github.com/CaroDute/Projet-6-SophieBluel",
   "cover":"./src/assets/images/projectsCover/sophiebluelCover.png",
-  "descriptions":"Intégration d'une page web dynamique en Javascript pour une architecte d'intérieur",
+  "descriptions":"Intégration d'une page web dynamique en Javascript pour une architecte d'intérieur. Utilisation d'une API pour mettre en ligne des projets. Création d'une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux projets.",
   "skillsTitle": "Skills",
   "skills": [
     {
@@ -77,7 +77,7 @@
   "url":"",
   "github":"https://github.com/CaroDute/Projet-8-Kasa",
   "cover":"./src/assets/images/projectsCover/kasaCover.png",
-  "descriptions":"Intégration d'une application web de location immobilière",
+  "descriptions":"Intégration d'une application web de location immobilière. Implémentation du front-end de l'application en utilisant React et React Router. Intégration de la maquette et utilisation de données extraites d'une fichier JSON.",
   "skillsTitle": "Skills",
   "skills": [
     {
@@ -96,7 +96,7 @@
   "url":"",
   "github":"https://github.com/CaroDute/Projet-11-ArgentBank-OC",
   "cover":"./src/assets/images/projectsCover/argentbankCover.png",
-  "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS",
+  "descriptions":"Implémentation du front-end d'une application bancaire avec React. Utilisation de React pour developper le projet et de Redux pour gérer le state de l'application. Recours à des appels API pour afficher les données du back-end. Mise en place d'une système de connexion d'utilisateur et de modification de nom d'utilisateur. ",
   "skillsTitle": "Skills",
   "skills": [
     {
