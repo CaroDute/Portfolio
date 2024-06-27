@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
-const ModalProject = ({ project,closeModal }) => {
+const ModalProject = ({ project, closeModal }) => {
+  const url = project.url;
 
   return (
     <div className="modal-container">
@@ -22,19 +23,29 @@ const ModalProject = ({ project,closeModal }) => {
         </div>
         <div className="modal__details">
           <div className="modal__details--description">
-            <p>
-              {project.descriptions}
-            </p>
+            <p>{project.descriptions}</p>
           </div>
           <div className="modal__details--skills">
-          {project.skills.map((lang, index) => (
-                <img key={index} src={lang.iconUrl} alt={lang.name} />
-              ))}
+            <h3>{project.skillsTitle}</h3>
+            {project.skills.map((lang, index) => (
+              <img key={index} src={lang.iconUrl} alt={lang.name} />
+            ))}
           </div>
           <div className="modal__details--link">
-          <a href={project.url} target="_blank">
-            <i className="fa-solid fa-link"></i>
-          </a>
+            {url ? (
+              <>
+                <a href={project.url} target="_blank">
+                  <i className="fa-solid fa-link"></i>
+                </a>
+                <a href={project.github} target="_blank">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+              </>
+            ) : (
+              <a href={project.github} target="_blank">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            )}
           </div>
         </div>
       </div>
