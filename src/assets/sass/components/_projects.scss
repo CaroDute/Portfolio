@@ -8,6 +8,10 @@
   &__title {
     font-size: 50px;
     padding-bottom: 40px;
+
+    span {
+      color: $green-color;
+    }
   }
 }
 

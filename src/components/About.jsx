@@ -25,7 +25,7 @@ const About = () => {
         </div>
       </div>
       <div data-aos="zoom-in-down" data-aos-duration="1000" className="container">
-        <a href="#projects">
+        <a href="#projets">
           <img
             src="src/assets/images/Fleche-bleu.png"
             alt="fleche bleu"

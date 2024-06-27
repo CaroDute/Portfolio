@@ -4,8 +4,8 @@
   "id": 1,
   "url":"https://carodute.github.io/Projet-3--Booki/",
   "cover":"./src/assets/images/projectsCover/bookiCover.png",
-  "descriptions":"Création de la page d'accueil d'une agence de voyage",
-  "langage": [
+  "descriptions":"Création de la page d'accueil d'une agence de voyage. Le but de ce projet était d'intégrer une interface responsive grâce à une maquette Figma pour mobile, tablette et desktop.",
+  "skills": [
     {
       "name": "HTML",
       "iconUrl": "./src/assets/images/logo/htmlLogo.png"
@@ -22,7 +22,7 @@
   "url":"",
   "cover":"./src/assets/images/projectsCover/ohmyfoodCover.png",
   "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS",
-  "langage": [
+  "skills": [
     {
       "name": "HTML",
       "iconUrl": "./src/assets/images/logo/htmlLogo.png"
@@ -43,7 +43,7 @@
   "url":"",
   "cover":"./src/assets/images/projectsCover/printitCover.png",
   "descriptions":"Mise en place d'un Carrousel interactif",
-  "langage": [
+  "skills": [
     {
       "name": "Javascript",
       "iconUrl": "./src/assets/images/logo/javascriptLogo.png"  
@@ -56,7 +56,7 @@
   "url":"",
   "cover":"./src/assets/images/projectsCover/sophiebluelCover.png",
   "descriptions":"Intégration d'une page web dynamique en Javascript pour une architecte d'intérieur",
-  "langage": [
+  "skills": [
     {
       "name": "Javascript",
       "iconUrl": "./src/assets/images/logo/javascriptLogo.png" 
@@ -69,7 +69,7 @@
   "url":"",
   "cover":"./src/assets/images/projectsCover/kasaCover.png",
   "descriptions":"Intégration d'une application web de location immobilière",
-  "langage": [
+  "skills": [
     {
       "name": "Sass",
       "iconUrl": "./src/assets/images/logo/sassLogo.png"   
@@ -86,7 +86,7 @@
   "url":"",
   "cover":"./src/assets/images/projectsCover/argentbankCover.png",
   "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS",
-  "langage": [
+  "skills": [
     {
       "name": "React",
       "iconUrl": "./src/assets/images/logo/reactLogo.png" 

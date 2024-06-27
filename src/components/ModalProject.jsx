@@ -1,35 +1,40 @@
 /* eslint-disable react/prop-types */
-const ModalProject = ({ closeModal }) => {
+
+const ModalProject = ({ project,closeModal }) => {
+
   return (
     <div className="modal-container">
       <div className="modal">
         <i onClick={closeModal} className="fa-solid fa-circle-xmark"></i>
-        <div className="modal__title">
-          <h2>Booki</h2>
-        </div>
-        <div className="modal__img">
-          <img
-            src="./src/assets/images/projectsCover/bookiCover.png"
-            alt="Le site booki desktop"
-            className="modal__img--desktop"
-          />
-          <img
-            src="./src/assets/images/projectsResponsive/bookiResponsive.png"
-            alt="Le site Booki en responsive téléphone"
-            className="modal__img--responsive"
-          />
+        <div>
+          <div className="modal__title">
+            <h2>
+              <span>&#47;&#47;</span> {project.title}
+            </h2>
+          </div>
+          <div className="modal__img">
+            <img
+              src={project.cover}
+              alt={project.title}
+              className="modal__img--desktop"
+            />
+          </div>
         </div>
         <div className="modal__details">
           <div className="modal__details--description">
-            <p>Description du site</p>
+            <p>
+              {project.descriptions}
+            </p>
           </div>
-          <div className="modal__details--langlink">
-            <div className="modal__details--langlink-lang">
-              <p>Langage</p>
-            </div>
-            <div className="modal__details--langlink-link">
-              <p>Lien</p>
-            </div>
+          <div className="modal__details--skills">
+          {project.skills.map((lang, index) => (
+                <img key={index} src={lang.iconUrl} alt={lang.name} />
+              ))}
+          </div>
+          <div className="modal__details--link">
+          <a href={project.url} target="_blank">
+            <i className="fa-solid fa-link"></i>
+          </a>
           </div>
         </div>
       </div>
@@ -41,7 +46,7 @@ export default ModalProject;
 
 {
   /* <div className="cards__single--langages">
-              {langage.map((lang, index) => (
+              {skills.map((lang, index) => (
                 <img key={index} src={lang.iconUrl} alt={lang.name} />
               ))}
             </div> */

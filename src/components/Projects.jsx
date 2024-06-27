@@ -6,24 +6,27 @@ import { useState } from "react";
 import AOS from "aos";
 
 const Projects = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
 
-  const openModal = () => {
-    setModalOpen(true);
+  const openModal = (projectId) => {
+    setSelectedProjectId(projectId);
+    console.log('id :', projectId);
   };
 
   const closeModal = () => {
-    setModalOpen(false);
+    setSelectedProjectId(null);
   };
+
+  const selectedProject = selectedProjectId ? projects.find(project => project.id === selectedProjectId) : null;
 
   return (
     <div className="projects" id="projets">
-      {modalOpen && <ModalProject closeModal={closeModal} />}
-      <h2 className="projects__title">&#47;&#47; PROJETS</h2>
+      {selectedProject && <ModalProject closeModal={closeModal} project={selectedProject} />}
+      <h2 className="projects__title"><span>&#47;&#47;</span> PROJETS</h2>
       <div className="cards">
         {projects.map((project, index) => (
           <div
@@ -35,7 +38,8 @@ const Projects = () => {
             <ProjectsCard
               cover={project.cover}
               title={project.title}
-              openModal={openModal}
+              openModal={() =>openModal(project.id)}
+              projectId={project.id}
             />
           </div>
         ))}

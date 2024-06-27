@@ -2,52 +2,92 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1500;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
 }
 
 .modal {
-  background-color: hsla(0, 0%, 0%, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 55%;
-  height: 80%;
-  max-width: 1200px;
-  max-height: 900px;
-  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 70%;
+  max-height: 100vh;
+  background-color: rgba(34, 34, 35, 0.985);
+  border-radius: 20px;
   padding: 20px;
+  position: relative;
+  display: flex;
 
   i {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 25px;
     cursor: pointer;
-    color: $purple-color;
+    font-size: 24px;
+    color: white;
   }
 
-  &__title {
-    font-size: 20px;
+  &__title h2 {
+    text-align: center;
+    margin-bottom: 20px;
     text-transform: uppercase;
+
+    span {
+      color: $green-color;
+    }
   }
 
   &__img {
-    display: flex;
-    gap: 50px;
-    max-width: 100%;
-    max-height: 50%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: 90%;
+      height: auto;
+      margin: 0;
+      border-radius: 20px;
+    }
+  }
 
-    &--responsive {
-      height: 100%;
+  &__details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+
+    &--description {
+        max-width: 90%;
+        padding-bottom: 20px;
+        margin-top: 120px;
     }
 
-    &--desktop {
-      width: 100%;
+    // &--description::after {
+    //   content: "";
+    //   position: absolute;
+    //   top: 270px;
+    //   right: 65px;
+    //   width: 30%;
+    //   height: 3px;
+    //   background-color: $blue-color;
+    // }
+
+    &--skills {
+      margin-top: 120px;
+    }
+
+    &--link {
+      margin-top: 120px;
     }
   }
 }
