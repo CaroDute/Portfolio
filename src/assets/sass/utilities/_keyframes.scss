@@ -54,12 +54,36 @@
 
 @keyframes moveSkills {
   0% {
-    transform: translate(0, 0); /* Position de départ */
+    opacity: 0;
+    transform: translate(0, -50px); /* Position de départ */ 
   }
-  50% {
-    transform: translate(calc(100% - 90px), calc(100% - 90px)); /* Milieu de l'animation */
+  20% {
+    opacity: 1;
+    transform: translate(0, 40px);
+  }
+  40% {
+    opacity: 1;
+    transform: translate(-90px,-50px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0px, -115px);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translate(115px, -50px);
   }
   100% {
-    transform: translate(0, 0); /* Retour à la position de départ */
+    opacity: 0;
+    transform: translate(0, -50px); /* Retour à la position de départ */
   }
 }
+
+// @keyframes load {
+//   0% {
+//     width: 0;
+//   }
+//   100% {
+//     width: 100%;
+//   }
+// }

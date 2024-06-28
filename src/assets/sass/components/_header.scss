@@ -50,15 +50,12 @@
 
     ul {
       display: flex;
-      list-style-type: none;
       gap: 40px;
       margin: 0;
       padding: 0;
 
       li {
         a {
-          text-decoration: none;
-          color: white;
           position: relative;
 
           &::after {

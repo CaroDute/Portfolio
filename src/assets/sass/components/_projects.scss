@@ -6,8 +6,7 @@
   max-width: 1224px;
 
   &__title {
-    font-size: 50px;
-    padding-bottom: 40px;
+    @include section-title;
 
     span {
       color: $green-color;
@@ -39,6 +38,8 @@
   }
 
   &__single {
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 48px 100px 0px;
+    border-radius: 10px;
     &--content {
       width: 100%;
     }

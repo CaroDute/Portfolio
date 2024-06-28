@@ -1,0 +1,42 @@
+[
+  {
+    "name":"HTML",
+    "id": 1,
+    "progression":"90%"
+  },
+  {
+    "name":"CSS",
+    "id": 2,
+    "progression":"90%"
+  },
+  {
+    "name":"SASS",
+    "id": 3,
+    "progression":"80%"
+  },
+  {
+    "name":"Javascript",
+    "id": 4,
+    "progression":"60%"
+  },
+  {
+    "name":"React",
+    "id": 5,
+    "progression":"50%"
+  },
+  {
+    "name":"Redux",
+    "id": 6,
+    "progression":"40%"
+  },
+  {
+    "name":"Git/GitHub",
+    "id": 7,
+    "progression":"70%"
+  },
+  {
+    "name":"Figma",
+    "id": 8,
+    "progression": "70%"
+  }
+]

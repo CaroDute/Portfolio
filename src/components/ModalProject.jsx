@@ -26,10 +26,10 @@ const ModalProject = ({ project, closeModal }) => {
             <p>{project.descriptions}</p>
           </div>
           <div className="modal__details--skills">
-            {/* <h3>{project.skillsTitle}</h3> */}
+            <h3>{project.skillsTitle}</h3>
             <div className="modal__details--skills-images">
               {project.skills.map((lang, index) => (
-                <img key={index} src={lang.iconUrl} alt={lang.name} />
+                <img key={index} src={lang.iconUrl} alt={lang.name} style={{ animationDelay: `${index * 1}s` }}/>
               ))}
             </div>
           </div>
