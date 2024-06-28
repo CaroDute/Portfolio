@@ -31,40 +31,6 @@
       animation: arrival 3s forwards;
     }
   }
-
-  &__text::before {
-    content: "";
-    position: absolute;
-    top: 21%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 2px;
-    height: 80%;
-    background-color: hsl(341, 78%, 58%, 0.5);
-    animation: about-animation 3s ease-in-out forwards; /* Applique l'animation avec les keyframes */
-  }
-
-  &::before {
-    content: "<p>"; /* Contenu textuel à placer après la ligne */
-    position: absolute;
-    top: 185px;
-    right: 150px; /* Décalage du texte '<p>' par rapport à la ligne */
-    font-size: 13px; /* Taille de la police du texte */
-    color: rgba($green-color, 0.5);
-    opacity: 0.5;
-    animation: about-animation-p 3s ease-in-out forwards;
-  }
-
-  &::after {
-    content: "</p>"; /* Contenu textuel à placer après la ligne */
-    position: absolute;
-    bottom: 235px;
-    right: 140px; /* Décalage du texte '<p>' par rapport à la ligne */
-    font-size: 13px; /* Taille de la police du texte */
-    color: rgba($green-color, 0.5);
-    opacity: 0.5;
-    animation: about-animation-p 3s ease-in-out forwards;
-  }
 }
 
 .container {

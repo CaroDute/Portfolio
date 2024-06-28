@@ -3,11 +3,15 @@ const Header = () => {
     <div className="header">
       <a href="/" className="header__title">
         <div className="header__name">
-          <p className="header__firstName">Caroline</p>
-          <p className="header__lastName">Duteurtre</p>
-          <p className="header__details">
-            Développeuse <span className="header__details--color">Web</span>
-          </p>
+          <div className="header__names">
+            <p className="header__firstName">Caroline</p>
+            <p className="header__lastName">Duteurtre</p>
+          </div>
+          <div>
+            <p className="header__details">
+              Développeuse <span className="header__details--color">Web</span>
+            </p>
+          </div>
         </div>
       </a>
       <nav className="header__nav">

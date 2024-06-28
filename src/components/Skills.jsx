@@ -15,31 +15,36 @@ const Skills = () => {
   };
 
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <div className="skills__presentation">
         <h2>
           <span>&#47;&#47;</span> SKILLS
         </h2>
-        <div>
-        <button className="button__click" onClick={handleAnimateProgress}>
-          PUSH ME
-        </button>
+        <div className="button__container">
+          <button className="button__click" onClick={handleAnimateProgress}>
+            PUSH ME
+          </button>
         </div>
       </div>
-      <ul>
-        {skills.map((skill) => (
-          <li key={skill.id}>
-            {skill.name}
-            <div className="skills__progress">
-              <div
-                className="skills__progress--bar"
-                style={{ width: 0 }}
-                data-progression={skill.progression}
-              ></div>
+      <div className="skills__details">
+        <ul>
+          {skills.map((skill) => (
+            <div key={skill.id}>
+              <li >{skill.name}</li>
+              <div className="skills__details--progress">
+                <div className="skills__progress">
+                  <div
+                    className="skills__progress--bar"
+                    style={{ width: 0 }}
+                    data-progression={skill.progression}
+                  ></div>
+                </div>
+                <p data-aos="fade-left">{skill.progression}</p>
+              </div>
             </div>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
