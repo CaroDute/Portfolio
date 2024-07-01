@@ -4,6 +4,9 @@
   margin: auto;
   width: 100%;
   max-width: 1224px;
+  background-color: rgba($purple-color, 0.2);
+  padding: 40px;
+  border-radius: 15px;
 
   &__title {
     @include section-title;
