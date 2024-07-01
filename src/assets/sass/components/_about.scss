@@ -3,7 +3,7 @@
   max-width: 1224px;
   margin: auto;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
   position: relative;
 
   &__image {
@@ -36,12 +36,16 @@
 .container {
   display: flex;
   justify-content: center;
+  position: relative;
+  height: 100px;
 
   &__arrow {
+    top: -40px;
+    rotate: 30deg;
+    position: absolute;
     cursor: pointer;
-    width: 40px;
+    width: 80px;
     padding-top: 20px;
     align-items: center;
-    animation: arrow-animation 1s infinite ease-in-out;
   }
 }

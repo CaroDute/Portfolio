@@ -10,12 +10,13 @@
 }
 
 @keyframes arrow-animation {
-  0%,
-  100% {
-    transform: translateY(-20px);
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
   }
-  50% {
-    transform: translateY(0px);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -81,10 +82,10 @@
 
 @keyframes rotateSkills {
   0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
   }
 }
 
