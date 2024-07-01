@@ -1,18 +1,11 @@
 import skills from "/public/skills.json";
-import AOS from "aos";
-import { useEffect } from "react";
 
 const Skills = () => {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
 
-  const handleAnimateProgress = () => {
-    const progressBars = document.querySelectorAll(".skills__progress--bar");
-    progressBars.forEach((bar) => {
-      bar.style.width = bar.dataset.progression;
-    });
-  };
+  const radius = 200;
+  const centerX = 600;
+  const centerY = 250;
+  const angleIncrement = (2 * Math.PI) / skills.length;
 
   return (
     <div className="skills" id="skills">
@@ -20,30 +13,21 @@ const Skills = () => {
         <h2>
           <span>&#47;&#47;</span> SKILLS
         </h2>
-        <div className="button__container">
-          <button className="button__click" onClick={handleAnimateProgress}>
-            PUSH ME
-          </button>
-        </div>
       </div>
       <div className="skills__details">
-        <ul>
-          {skills.map((skill) => (
+        <div className="skills__details--images">
+          {skills.map((skill, index) => (
             <div key={skill.id}>
-              <li >{skill.name}</li>
-              <div className="skills__details--progress">
-                <div className="skills__progress">
-                  <div
-                    className="skills__progress--bar"
-                    style={{ width: 0 }}
-                    data-progression={skill.progression}
-                  ></div>
-                </div>
-                <p data-aos="fade-left">{skill.progression}</p>
-              </div>
+              <img
+                key={index}
+                src={skill.img}
+                alt={skill.name}
+                style={{ animationDelay: `${index * 2}s` }}
+              />
+              {/* <p className="skills__details--name">{skill.name}</p> */}
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

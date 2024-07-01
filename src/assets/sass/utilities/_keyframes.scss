@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes moveSkills {
+@keyframes moveSkillsModale {
   0% {
     opacity: 0;
     transform: translate(0, -50px); /* Position de départ */ 
@@ -79,11 +79,21 @@
   }
 }
 
-// @keyframes load {
-//   0% {
-//     width: 0;
-//   }
-//   100% {
-//     width: 100%;
-//   }
-// }
+@keyframes rotateSkills {
+  0% {
+    transform: rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

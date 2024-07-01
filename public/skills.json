@@ -2,49 +2,41 @@
   {
     "name":"HTML",
     "id": 1,
-    "progression":"90%",
     "img":"./src/assets/images/logo/htmlLogo.png"
   },
   {
     "name":"CSS",
     "id": 2,
-    "progression":"90%",
     "img":"./src/assets/images/logo/cssLogo.png"
   },
   {
     "name":"SASS",
     "id": 3,
-    "progression":"80%",
     "img":"./src/assets/images/logo/sassLogo.png"
   },
   {
     "name":"Javascript",
     "id": 4,
-    "progression":"60%",
     "img":"./src/assets/images/logo/javascriptLogo.png"
   },
   {
     "name":"React",
     "id": 5,
-    "progression":"50%",
     "img":"./src/assets/images/logo/reactLogo.png"
   },
   {
     "name":"Redux",
     "id": 6,
-    "progression":"40%",
     "img":"./src/assets/images/logo/reduxLogo.png"
   },
   {
     "name":"Git/GitHub",
     "id": 7,
-    "progression":"70%",
     "img":"./src/assets/images/logo/githubLogo.png"
   },
   {
     "name":"Figma",
     "id": 8,
-    "progression": "70%",
     "img":"./src/assets/images/logo/figmaLogo.png"
   }
 ]
