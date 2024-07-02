@@ -3,8 +3,28 @@
   padding: 10px 20px;
   text-align: right;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &__socials {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    i {
+      font-size: 30px;
+    }
+    i:hover {
+     color: pink;
+    }
+  }
 
   @media (max-width: 480px) {
     font-size: 10px;
+    &__socials {
+      padding-left: 0;
+      i {
+        font-size: 20px;
+      }
+    }
   }
 }
