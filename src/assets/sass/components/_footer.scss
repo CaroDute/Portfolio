@@ -3,4 +3,8 @@
   padding: 10px 20px;
   text-align: right;
   margin-top: 50px;
+
+  @media (max-width: 480px) {
+    font-size: 10px;
+  }
 }

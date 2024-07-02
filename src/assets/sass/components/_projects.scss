@@ -85,9 +85,34 @@
         width: 35%;
         height: 3px;
         background-color: $blue-color;
-        animation: card-animation 0.5s ease forwards; /* Applique l'animation avec les keyframes */
+        animation: card-animation 0.5s ease forwards;
         opacity: 0; /* Opacité initiale pour l'animation */
       }
+    }
+  }
+
+  @media (max-width: 1380px) {
+    &__single {
+      &--details {
+        p::after {
+          animation: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+
+    &__animation {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    img {
+      height: 150px;
     }
   }
 }

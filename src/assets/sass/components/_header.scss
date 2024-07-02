@@ -103,4 +103,109 @@
   &__logo {
     width: 100px;
   }
+
+  //******** Media Queries ********//
+
+  @media (max-width: 820px) {
+    ul {
+      gap: 20px;
+      li {
+        font-size: 12px;
+
+        a {
+          &::after {
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    .header {
+      &__firstName {
+        font-size: 13px;
+      }
+
+      &__lastName {
+        font-size: 15px;
+      }
+
+      &__details {
+        font-size: 10px;
+
+        &--color {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 5px 10px;
+
+    &__nav {
+      padding-right: 0;
+    }
+
+    ul {
+      gap: 15px;
+      li {
+        font-size: 10px;
+      }
+    }
+
+    .header {
+      &__firstName {
+        font-size: 11px;
+      }
+
+      &__lastName {
+        font-size: 12px;
+      }
+
+      &__details {
+        font-size: 8px;
+
+        &--color {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .header {
+      &__names {
+        gap: 2px;
+      }
+
+      &__firstName {
+        font-size: 8px;
+      }
+
+      &__lastName {
+        font-size: 9px;
+      }
+
+      &__details {
+        font-size: 8px;
+
+        &--color {
+          font-size: 9px;
+        }
+      }
+    }
+
+    ul {
+      gap: 3.5px;
+      li {
+        font-size: 7px;
+        a {
+          &::after {
+            bottom: 2;
+            border-bottom: 4px solid transparent;
+          }
+        }
+      }
+    }
+  }
 }

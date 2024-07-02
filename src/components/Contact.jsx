@@ -32,7 +32,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <div className="form__title">
         <h2>
           {" "}

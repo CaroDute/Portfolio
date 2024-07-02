@@ -62,10 +62,36 @@
       height: 35px;
       margin-top: 20px;
       font-size: 17px;
+      border-color: white;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px;
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__button {
+      &--value {
+        width: 40%;
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 10px;
     }
   }
 }
 
 form {
   width: 60%;
+
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
 }

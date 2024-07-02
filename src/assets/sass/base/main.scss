@@ -44,3 +44,9 @@ a {
 li {
   list-style-type: none;
 }
+
+@media (max-width: 1024px) {
+  main {
+    padding: 20px;
+  }
+}

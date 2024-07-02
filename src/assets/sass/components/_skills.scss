@@ -6,11 +6,10 @@
   min-height: 100%;
   padding-top: 40px;
 
-
   &__name {
-    margin-top: 25px; 
-    font-size: 20px;  
-    font-weight: 800; 
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 800;
   }
 
   &__details {
@@ -36,6 +35,39 @@
 
     span {
       color: $green-color;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__details {
+      margin-bottom: 0;
+      height: 320px;
+    }
+
+    &__name {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    img {
+      width: 50px;
+      animation: appear 2s forwards, rotateSkillsTablet 15s infinite linear;
+      top: 15%;
+      right: 47%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__details {
+      height: 220px;
+    }
+    img {
+      width: 30px;
+      animation: appear 2s forwards, rotateSkillsSmartphone 15s infinite linear;
+      top: 28%;
+    }
+    &__name {
+      font-size: 10px;
+      margin-top: 5px;
     }
   }
 }
