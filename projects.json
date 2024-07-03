@@ -1,0 +1,115 @@
+[
+{
+  "title": "Booki",
+  "id": 1,
+  "url":"https://carodute.github.io/Projet-3--Booki/",
+  "github":"https://github.com/CaroDute/Projet-3--Booki",
+  "cover":"./images/projectsCover/bookiCover.webp",
+  "descriptions":"Création de la page d'accueil d'une agence de voyage. Le but de ce projet était d'intégrer une interface responsive grâce à une maquette Figma pour mobile, tablette et desktop.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "HTML",
+      "iconUrl": "./images/logo/htmlLogo.webp"
+    },
+    {
+      "name": "CSS",
+      "iconUrl": "./images/logo/cssLogo.webp" 
+    }
+  ]
+},
+{
+  "title": "Ohmyfood",
+  "id": 2,
+  "url":"",
+  "github":"https://github.com/CaroDute/Projet-4--OhmyFood",
+  "cover":"./images/projectsCover/ohmyfoodCover.webp",
+  "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS. Intégration d'une maquette en mobile-first. Utilisation de SASS, pré-processeur CSS. Utilisation de Git et Github pour versionner le projet.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "HTML",
+      "iconUrl": "./images/logo/htmlLogo.webp"
+    },
+    {
+      "name": "CSS",
+      "iconUrl": "./images/logo/cssLogo.webp"  
+    },
+    {
+      "name": "Sass",
+      "iconUrl": "./images/logo/sassLogo.webp"  
+    }
+  ]
+},
+{
+  "title": "Print it!",
+  "id": 3,
+  "url":"https://carodute.github.io/Projet-5--PrintIt-/",
+  "github":"https://github.com/CaroDute/Projet-5--PrintIt-",
+  "cover":"./images/projectsCover/printitCover.webp",
+  "descriptions":"Premier pas sur Javascript avec la mise en place d'un carrousel interactif. Mise à jour du code existant HTML et ajout du carrousel en Javascript.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "Javascript",
+      "iconUrl": "./images/logo/javascriptLogo.webp"  
+    }
+  ]
+},
+{
+  "title": "Sophie Bluel",
+  "id": 4,
+  "url":"",
+  "github":"https://github.com/CaroDute/Projet-6-SophieBluel",
+  "cover":"./images/projectsCover/sophiebluelCover.webp",
+  "descriptions":"Intégration d'une page web dynamique en Javascript pour une architecte d'intérieur. Utilisation d'une API pour mettre en ligne des projets. Création d'une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux projets.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "Javascript",
+      "iconUrl": "./images/logo/javascriptLogo.webp" 
+    }
+  ]
+},
+{
+  "title": "Kasa",
+  "id": 5,
+  "url":"",
+  "github":"https://github.com/CaroDute/Projet-8-Kasa",
+  "cover":"./images/projectsCover/kasaCover.webp",
+  "descriptions":"Intégration d'une application web de location immobilière. Implémentation du front-end de l'application en utilisant React et React Router. Intégration de la maquette et utilisation de données extraites d'une fichier JSON.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "Sass",
+      "iconUrl": "./images/logo/sassLogo.webp"   
+    },
+    {
+      "name": "React",
+      "iconUrl": "./images/logo/reactLogo.webp"
+    }
+  ]
+},
+{
+  "title": "ArgentBank",
+  "id": 6,
+  "url":"",
+  "github":"https://github.com/CaroDute/Projet-11-ArgentBank-OC",
+  "cover":"./images/projectsCover/argentbankCover.webp",
+  "descriptions":"Implémentation du front-end d'une application bancaire avec React. Utilisation de React pour developper le projet et de Redux pour gérer le state de l'application. Recours à des appels API pour afficher les données du back-end. Mise en place d'une système de connexion d'utilisateur et de modification de nom d'utilisateur. ",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "React",
+      "iconUrl": "./images/logo/reactLogo.webp" 
+    },
+    {
+      "name": "Redux",
+      "iconUrl": "./images/logo/reduxLogo.webp"
+    }
+  ]
+}
+]
+
+
+
