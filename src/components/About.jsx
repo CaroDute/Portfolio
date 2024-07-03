@@ -6,7 +6,7 @@ const About = () => {
       <div id="aboutMe" className="about">
         <div className="about__image">
           <img
-            src="src/assets/images/Bureau.jpeg"
+            src="src/assets/images/Bureau.webp"
             alt="Photo de moi à mon bureau"
           />
         </div>
@@ -24,13 +24,16 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div data-aos="zoom-in-down" data-aos-duration="1000" className="container">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-duration="1000"
+        className="container"
+      >
         <a href="#projets">
           <img
-            src="src/assets/images/Fleche-jaune.png"
+            src="src/assets/images/Fleche-jaune.webp"
             alt="fleche bleu"
             className="container__arrow animate__animated animate__flip"
-            
           />
         </a>
       </div>
