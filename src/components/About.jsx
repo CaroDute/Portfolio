@@ -1,16 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import BureauImage from "/public/images/Bureau.webp";
-import FlecheJaune from "/public/images/fleche-jaune.webp";
+import BureauImage from "/images/Bureau.webp";
+import FlecheJaune from "/images/fleche-jaune.webp";
 
 const About = () => {
   return (
     <>
       <div id="aboutMe" className="about">
         <div className="about__image">
-          <img
-            src={BureauImage}
-            alt="Photo de moi à mon bureau"
-          />
+          <img src={BureauImage} alt="Photo de moi à mon bureau" />
         </div>
         <div className="about__text">
           <h1 className="about__text--title">Je m'appelle Caroline, </h1>

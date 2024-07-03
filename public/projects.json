@@ -61,7 +61,7 @@
   "id": 4,
   "url":"",
   "github":"https://github.com/CaroDute/Projet-6-SophieBluel",
-  "cover":"./src/assets/images/projectsCover/sophiebluelCover.webp",
+  "cover":"./images/projectsCover/sophiebluelCover.webp",
   "descriptions":"Intégration d'une page web dynamique en Javascript pour une architecte d'intérieur. Utilisation d'une API pour mettre en ligne des projets. Création d'une page de connexion pour l'administrateur du site ainsi qu'une modale permettant d'uploader de nouveaux projets.",
   "skillsTitle": "Skills",
   "skills": [
