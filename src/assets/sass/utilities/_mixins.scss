@@ -6,3 +6,9 @@
     font-size: 30px;
   }
 }
+
+@mixin border-section {
+  background-color: $card-color;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+}
