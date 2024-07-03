@@ -4,17 +4,17 @@
   "id": 1,
   "url":"https://carodute.github.io/Projet-3--Booki/",
   "github":"https://github.com/CaroDute/Projet-3--Booki",
-  "cover":"./src/assets/images/projectsCover/bookiCover.webp",
+  "cover":"./images/projectsCover/bookiCover.webp",
   "descriptions":"Création de la page d'accueil d'une agence de voyage. Le but de ce projet était d'intégrer une interface responsive grâce à une maquette Figma pour mobile, tablette et desktop.",
   "skillsTitle": "Skills",
   "skills": [
     {
       "name": "HTML",
-      "iconUrl": "./src/assets/images/logo/htmlLogo.webp"
+      "iconUrl": "./images/logo/htmlLogo.webp"
     },
     {
       "name": "CSS",
-      "iconUrl": "./src/assets/images/logo/cssLogo.webp" 
+      "iconUrl": "./images/logo/cssLogo.webp" 
     }
   ]
 },
@@ -23,21 +23,21 @@
   "id": 2,
   "url":"",
   "github":"https://github.com/CaroDute/Projet-4--OhmyFood",
-  "cover":"./src/assets/images/projectsCover/ohmyfoodCover.webp",
+  "cover":"./images/projectsCover/ohmyfoodCover.webp",
   "descriptions":"Amélioration de l'interface d'un site mobile avec des animations CSS. Intégration d'une maquette en mobile-first. Utilisation de SASS, pré-processeur CSS. Utilisation de Git et Github pour versionner le projet.",
   "skillsTitle": "Skills",
   "skills": [
     {
       "name": "HTML",
-      "iconUrl": "./src/assets/images/logo/htmlLogo.webp"
+      "iconUrl": "./images/logo/htmlLogo.webp"
     },
     {
       "name": "CSS",
-      "iconUrl": "./src/assets/images/logo/cssLogo.webp"  
+      "iconUrl": "./images/logo/cssLogo.webp"  
     },
     {
       "name": "Sass",
-      "iconUrl": "./src/assets/images/logo/sassLogo.webp"  
+      "iconUrl": "./images/logo/sassLogo.webp"  
     }
   ]
 },
@@ -46,13 +46,13 @@
   "id": 3,
   "url":"https://carodute.github.io/Projet-5--PrintIt-/",
   "github":"https://github.com/CaroDute/Projet-5--PrintIt-",
-  "cover":"./src/assets/images/projectsCover/printitCover.webp",
+  "cover":"./images/projectsCover/printitCover.webp",
   "descriptions":"Premier pas sur Javascript avec la mise en place d'un carrousel interactif. Mise à jour du code existant HTML et ajout du carrousel en Javascript.",
   "skillsTitle": "Skills",
   "skills": [
     {
       "name": "Javascript",
-      "iconUrl": "./src/assets/images/logo/javascriptLogo.webp"  
+      "iconUrl": "./images/logo/javascriptLogo.webp"  
     }
   ]
 },
@@ -67,7 +67,7 @@
   "skills": [
     {
       "name": "Javascript",
-      "iconUrl": "./src/assets/images/logo/javascriptLogo.webp" 
+      "iconUrl": "./images/logo/javascriptLogo.webp" 
     }
   ]
 },
@@ -76,17 +76,17 @@
   "id": 5,
   "url":"",
   "github":"https://github.com/CaroDute/Projet-8-Kasa",
-  "cover":"./src/assets/images/projectsCover/kasaCover.webp",
+  "cover":"./images/projectsCover/kasaCover.webp",
   "descriptions":"Intégration d'une application web de location immobilière. Implémentation du front-end de l'application en utilisant React et React Router. Intégration de la maquette et utilisation de données extraites d'une fichier JSON.",
   "skillsTitle": "Skills",
   "skills": [
     {
       "name": "Sass",
-      "iconUrl": "./src/assets/images/logo/sassLogo.webp"   
+      "iconUrl": "./images/logo/sassLogo.webp"   
     },
     {
       "name": "React",
-      "iconUrl": "./src/assets/images/logo/reactLogo.webp"  
+      "iconUrl": "./images/logo/reactLogo.webp"
     }
   ]
 },
@@ -95,17 +95,17 @@
   "id": 6,
   "url":"",
   "github":"https://github.com/CaroDute/Projet-11-ArgentBank-OC",
-  "cover":"./src/assets/images/projectsCover/argentbankCover.webp",
+  "cover":"./images/projectsCover/argentbankCover.webp",
   "descriptions":"Implémentation du front-end d'une application bancaire avec React. Utilisation de React pour developper le projet et de Redux pour gérer le state de l'application. Recours à des appels API pour afficher les données du back-end. Mise en place d'une système de connexion d'utilisateur et de modification de nom d'utilisateur. ",
   "skillsTitle": "Skills",
   "skills": [
     {
       "name": "React",
-      "iconUrl": "./src/assets/images/logo/reactLogo.webp" 
+      "iconUrl": "./images/logo/reactLogo.webp" 
     },
     {
       "name": "Redux",
-      "iconUrl": "./src/assets/images/logo/reduxLogo.webp"
+      "iconUrl": "./images/logo/reduxLogo.webp"
     }
   ]
 }

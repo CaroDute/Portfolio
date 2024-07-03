@@ -1,5 +1,5 @@
 import ProjectsCard from "./ProjectsCard";
-import projects from "/src/projects.json";
+import projects from "./src/projects.json";
 import ModalProject from "./ModalProject";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -14,19 +14,25 @@ const Projects = () => {
 
   const openModal = (projectId) => {
     setSelectedProjectId(projectId);
-    console.log('id :', projectId);
+    console.log("id :", projectId);
   };
 
   const closeModal = () => {
     setSelectedProjectId(null);
   };
 
-  const selectedProject = selectedProjectId ? projects.find(project => project.id === selectedProjectId) : null;
+  const selectedProject = selectedProjectId
+    ? projects.find((project) => project.id === selectedProjectId)
+    : null;
 
   return (
     <div className="projects" id="projets">
-      {selectedProject && <ModalProject closeModal={closeModal} project={selectedProject} />}
-      <h2 className="projects__title"><span>&#47;&#47;</span> PROJETS</h2>
+      {selectedProject && (
+        <ModalProject closeModal={closeModal} project={selectedProject} />
+      )}
+      <h2 className="projects__title">
+        <span>&#47;&#47;</span> PROJETS
+      </h2>
       <div className="cards">
         {projects.map((project, index) => (
           <div
@@ -38,15 +44,15 @@ const Projects = () => {
             <ProjectsCard
               cover={project.cover}
               title={project.title}
-              openModal={() =>openModal(project.id)}
+              openModal={() => openModal(project.id)}
               projectId={project.id}
             />
           </div>
         ))}
       </div>
-      
     </div>
   );
 };
 
 export default Projects;
+

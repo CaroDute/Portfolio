@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import skills from "/src/skills.json";
+import skills from "/";
 
 const Skills = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

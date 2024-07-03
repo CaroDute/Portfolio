@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import BureauImage from "/public/images/Bureau.webp";
+import FlecheJaune from "/public/images/fleche-jaune.webp";
 
 const About = () => {
   return (
@@ -6,7 +8,7 @@ const About = () => {
       <div id="aboutMe" className="about">
         <div className="about__image">
           <img
-            src="src/assets/images/Bureau.webp"
+            src={BureauImage}
             alt="Photo de moi à mon bureau"
           />
         </div>
@@ -31,7 +33,7 @@ const About = () => {
       >
         <a href="#projets">
           <img
-            src="src/assets/images/Fleche-jaune.webp"
+            src={FlecheJaune}
             alt="fleche bleu"
             className="container__arrow animate__animated animate__flip"
           />
