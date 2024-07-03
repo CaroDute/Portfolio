@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import BureauImage from "/images/Bureau.webp";
 import FlecheJaune from "/images/fleche-jaune.webp";
-import Geometric from "/images/geometric.webp";
 
 const About = () => {
   return (
