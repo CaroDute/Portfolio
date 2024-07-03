@@ -54,11 +54,10 @@ export const Contact = () => {
             <textarea name="message" required />
           </div>
           <div className="form__button">
-            <input
+            <button
               type="submit"
-              value="Envoyer"
               className="form__button--value"
-            />
+            >Envoyer</button>
           </div>
         </form>
       </div>

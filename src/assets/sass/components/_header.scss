@@ -4,7 +4,7 @@
   position: sticky;
   top: 0px;
   backdrop-filter: blur(6px);
-  background-color: rgba(136, 136, 136, 0.08);
+  background-color: rgba($card-color,0.8);
   padding: 5px 30px;
   z-index: 1000;
   width: 100%;
@@ -42,7 +42,7 @@
     font-weight: 200;
 
     &--color {
-      color: $purple-color;
+      color: $yellow-color;
       font-size: 15px;
     }
   }
@@ -82,19 +82,19 @@
         }
 
         &:nth-child(1) a::after {
-          border-color: $pink-color;
+          border-color: $yellow-color;
         }
 
         &:nth-child(2) a::after {
-          border-color: $green-color;
+          border-color: $secondary-color;
         }
 
         &:nth-child(3) a::after {
-          border-color: $blue-color;
+          border-color: $yellow-color;
         }
 
         &:nth-child(4) a::after {
-          border-color: $purple-color;
+          border-color: $secondary-color;
         }
       }
     }

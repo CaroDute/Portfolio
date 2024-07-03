@@ -1,5 +1,5 @@
 import ProjectsCard from "./ProjectsCard";
-import projects from "/public/projects.json";
+import projects from "/src/projects.json";
 import ModalProject from "./ModalProject";
 import { useEffect } from "react";
 import { useState } from "react";

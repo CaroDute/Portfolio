@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba($background-color, 0.5);
   z-index: 1000;
   overflow: auto;
 }
@@ -15,7 +15,7 @@
 .modal {
   width: 70%;
   max-height: 90vh;
-  background-color: rgba(34, 34, 35, 0.985);
+  background-color: rgba($background-color, 0.985);
   border-radius: 20px;
   padding: 20px;
   position: relative;
@@ -30,17 +30,17 @@
     right: 10px;
     cursor: pointer;
     font-size: 24px;
-    color: white;
+    color: $text-color;
   }
+  .fa-solid.fa-circle-xmark:hover {
+    color: $yellow-color;
+  }
+
 
   &__title h2 {
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-
-    span {
-      color: $green-color;
-    }
   }
 
   &__img {
@@ -82,10 +82,11 @@
       h3 {
         padding: 7px;
         font-size: 13px;
-        border: solid 1px $blue-color;
-        background-color: $blue-color;
+        border: solid 1px $border-color;
+        background-color: $secondary-color;
         border-radius: 20px;
         z-index: 20;
+        color: white;
       }
 
       img {
@@ -107,6 +108,9 @@
 
       i {
         font-size: 35px;
+      }
+      i:hover {
+        color: $yellow-color;
       }
     }
   }

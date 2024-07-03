@@ -22,7 +22,7 @@
 body {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $text-color;
   background-color: $background-color;
 }
 
@@ -43,6 +43,10 @@ a {
 
 li {
   list-style-type: none;
+}
+
+span {
+  color: $yellow-color;
 }
 
 @media (max-width: 1024px) {

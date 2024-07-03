@@ -32,10 +32,6 @@
 
   h2 {
     @include section-title;
-
-    span {
-      color: $green-color;
-    }
   }
 
   @media (max-width: 768px) {

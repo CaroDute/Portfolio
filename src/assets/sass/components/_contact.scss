@@ -4,7 +4,8 @@
   max-width: 1224px;
   min-height: 100%;
   padding: 40px;
-  background-color: rgba($blue-color, 0.2);
+  background-color: $card-color;
+  border: 1px solid $border-color;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,7 @@
     margin-bottom: 10px;
 
     span {
-      color: $green-color;
+      color: $yellow-color;
     }
   }
 
@@ -49,6 +50,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    input,
+    textarea {
+      background-color: $background-color;
+      border: 1px solid $border-color;
+    }
   }
 
   &__button {
@@ -56,13 +63,18 @@
     align-items: center;
     justify-content: center;
 
-    &--value {
+    button {
       width: 30%;
       border-radius: 15px;
       height: 35px;
       margin-top: 20px;
       font-size: 17px;
-      border-color: white;
+      background-color: $yellow-color;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: rgba($yellow-color, 0.8);
     }
   }
 
