@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="header">
-      <a href="/" className="header__title">
+      <a href="/Portfolio/" className="header__title">
         <div className="header__name">
           <div className="header__names">
             <p className="header__firstName">Caroline</p>
