@@ -108,6 +108,44 @@
       "iconUrl": "./images/logo/reduxLogo.webp"
     }
   ]
+},
+{
+  "title": "Nina Carducci",
+  "id": 7,
+  "url":"https://carodute.github.io/Projet-9-Nina-Carducci/",
+  "github":"https://github.com/CaroDute/Projet-9-Nina-Carducci",
+  "cover":"./images/projectsCover/ninacarducciCover.webp",
+  "descriptions":"Optimisation du référencement (SEO) d'un site en améliorant les performances et l'accessibilité. Modification du code existant, et utilisation d'outils tels que Lighthouse et Wave. Création d'un rapport illustrant les résultats avant/après les modifications. ",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "Wave",
+      "iconUrl": "./images/logo/waveLogo.webp"
+    },
+    {
+      "name": "Lighthouse",
+      "iconUrl": "./images/logo/lighthouseLogo.webp" 
+    }
+  ]
+},
+{
+  "title": "724 Events",
+  "id": 8,
+  "url":"",
+  "github":"https://github.com/CaroDute/Projet-10-724-Events",
+  "cover":"./images/projectsCover/724EventsCover.webp",
+  "descriptions":"Examen du code existant pour debugger l'application 724Events. Finalisation du site après debug. Identification des problèmes et bugs signalés sur le site. Utilisation de Javascript et des outils specifiques à React comme React Developer Tools. Création de tests unitaires et d'intégration pour m'assurer que les différents composants du site fonctionnent bien entre eux.",
+  "skillsTitle": "Skills",
+  "skills": [
+    {
+      "name": "Javascript",
+      "iconUrl": "./images/logo/javascriptLogo.webp"
+    },
+    {
+      "name": "React",
+      "iconUrl": "./images/logo/reactLogo.webp" 
+    }
+  ]
 }
 ]
 
