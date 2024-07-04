@@ -12,18 +12,24 @@ const About = () => {
         <div className="about__text">
           <h1 className="about__text--title">Je m'appelle Caroline, </h1>
           <p>
-            je suis developpeuse junior. J'ai choisi d'en faire mon métier suite
-            à une reconversion professionnelle. J'ai suivi une formation
-            d'intégration web auprès d'OpenClassrooms. J'ai pu y developper mes
-            compétences en front-end, en travaillant principalement sur les
-            bases HTML/ CSS ainsi que Javascript. Pour aller un peu plus loin,
-            j'ai egalement travaillé sur React et Redux. J'ai pu developper des
-            compétences en SEO et en optimisation des performances. Je suis
-            actuellement à la recherche d'un emploi en tant que developpeuse
-            front-end. J'ai réalisé de nombreux projets durant ma formation dont
-            vous pouvez avoir un aperçu juste en dessous. N'hésitez pas à aller
-            découvrir ça et si vous souhaitez me contacter le formulaire vous
-            attend en bas de page !
+            je suis{" "}
+            <span className="about__text--motsclés">developpeuse junior</span>.
+            J'ai choisi d'en faire mon métier suite à une reconversion
+            professionnelle. En suivant une formation
+            <span className="about__text--motsclés"> d'intégration web </span>
+            auprès d'OpenClassrooms, j'ai pu y developper mes compétences en{" "}
+            <span className="about__text--motsclés">front-end</span>.
+            Travaillant principalement sur les bases
+            <span className="about__text--langages"> HTML/ CSS</span> ainsi que{" "}
+            <span className="about__text--langages">Javascript</span>. Pour
+            aller un peu plus loin, j'ai egalement travaillé sur{" "}
+            <span className="about__text--langages">React et Redux</span>. Je
+            suis actuellement à la recherche d'un emploi en tant que
+            developpeuse front-end. Vous pouvez avoir un aperçu juste en dessous
+            de nombreux projets que j'ai réalisé durant ma formation. N'hésitez
+            pas à aller découvrir ça et si vous souhaitez{" "}
+            <span className="about__text--motsclés">me contacter </span>le
+            formulaire vous attend en bas de page !
           </p>
         </div>
       </div>

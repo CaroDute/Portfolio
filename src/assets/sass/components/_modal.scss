@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,13 +29,13 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 24px;
-    color: $text-color;
+  }
+  i {
+    font-size: 20px;
   }
   .fa-solid.fa-circle-xmark:hover {
     color: $yellow-color;
   }
-
 
   &__title h2 {
     text-align: center;
@@ -49,7 +49,10 @@
     margin-bottom: 20px;
 
     img {
-      max-width: 60%;
+      max-width: 80%; /* Ajuste la largeur maximale à 100% de son conteneur */
+      max-height: 80vh; /* Ajuste la hauteur maximale à 80% de la hauteur de la fenêtre */
+      width: auto; /* Maintient le rapport d'aspect en largeur */
+      height: auto; /* Maintient le rapport d'aspect en hauteur */
       border-radius: 20px;
     }
   }
@@ -66,7 +69,7 @@
     &--description {
       max-width: 50%;
       min-width: 50%;
-      font-size: 14px;
+      font-size: 2vh;
       padding-left: 20px;
     }
 
@@ -81,7 +84,7 @@
 
       h3 {
         padding: 7px;
-        font-size: 13px;
+        font-size: 2vh;
         border: solid 1px $border-color;
         background-color: $secondary-color;
         border-radius: 20px;
@@ -90,12 +93,9 @@
       }
 
       img {
-        width: 62%;
+        width: 6vh;
+        height: auto;
         padding-left: 5px;
-        animation: moveSkillsModale 10s linear infinite;
-        position: absolute;
-        right: 12px;
-        opacity: 0;
       }
     }
 
@@ -118,12 +118,14 @@
   @media (max-width: 1024px) {
     &__details {
       &--description {
-        font-size: 12px;
+        font-size: 1.4vh;
       }
       &--skills {
         img {
-          width: 50%;
-          animation: moveSkillsModaleMobile 10s linear infinite;
+          width: 5vh;
+        }
+        h3 {
+          font-size: 1.2vh;
         }
       }
     }
@@ -134,12 +136,11 @@
     &__details {
       &--description {
         padding-left: 0;
-        font-size: 10px;
+        font-size: 1.2vh;
       }
       &--skills {
         img {
-          width: 40%;
-          animation: none;
+          width: 4vh;
           opacity: 1;
           position: static;
         }
@@ -154,6 +155,9 @@
     }
 
     &__details {
+      &--description {
+        font-size: 0.9vh;
+      }
       &--link {
         padding-right: 0;
         i {
@@ -166,7 +170,7 @@
           font-size: 9px;
         }
         img {
-          width: 30%;
+          width: 3vh;
         }
       }
     }

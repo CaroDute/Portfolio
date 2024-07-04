@@ -56,16 +56,3 @@ const ModalProject = ({ project, closeModal }) => {
 };
 
 export default ModalProject;
-
-{
-  /* <div className="cards__single--langages">
-              {skills.map((lang, index) => (
-                <img key={index} src={lang.iconUrl} alt={lang.name} />
-              ))}
-            </div> */
-}
-{
-  /* <a href={url} target="_blank">
-            <i className="fa-solid fa-link"></i>
-          </a> */
-}

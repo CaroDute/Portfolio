@@ -29,6 +29,16 @@
       overflow: hidden;
       animation: arrival 3s forwards;
     }
+
+    &--motsclés {
+      font-weight: bold;
+      font-size: 11px;
+      color: $red-color;
+    }
+
+    &--langages {
+      font-weight: bold;
+    }
   }
 
   @media (max-width: 1315px) {

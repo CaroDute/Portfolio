@@ -78,6 +78,7 @@
 
           &:hover::after {
             width: 100%; /* Agrandit la ligne au survol */
+            border-color: $yellow-color;
           }
         }
 
@@ -86,7 +87,7 @@
         }
 
         &:nth-child(2) a::after {
-          border-color: $secondary-color;
+          border-color: $red-color;
         }
 
         &:nth-child(3) a::after {
@@ -94,7 +95,7 @@
         }
 
         &:nth-child(4) a::after {
-          border-color: $secondary-color;
+          border-color: $red-color;
         }
       }
     }

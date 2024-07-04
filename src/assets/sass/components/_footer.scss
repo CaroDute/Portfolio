@@ -13,8 +13,18 @@
     i {
       font-size: 30px;
     }
-    i:hover {
-     color: $yellow-color;
+
+    i.fa-instagram:hover {
+      color: $yellow-color;
+    }
+    i.fa-facebook:hover {
+      color: $red-color;
+    }
+    i.fa-twitter:hover {
+      color: $yellow-color;
+    }
+    i.fa-github:hover {
+      color: $red-color;
     }
   }
 
