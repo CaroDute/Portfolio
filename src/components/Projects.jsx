@@ -9,12 +9,11 @@ const Projects = () => {
   const [selectedProjectId, setSelectedProjectId] = useState(null);
 
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 400, once: true });
   }, []);
 
   const openModal = (projectId) => {
     setSelectedProjectId(projectId);
-    console.log("id :", projectId);
   };
 
   const closeModal = () => {
@@ -39,7 +38,7 @@ const Projects = () => {
             className="cards__animation"
             key={project.id}
             data-aos="fade-down"
-            data-aos-delay={index * 200}
+            data-aos-delay={index * 100}
           >
             <ProjectsCard
               cover={project.cover}
