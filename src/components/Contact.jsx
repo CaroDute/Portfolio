@@ -42,22 +42,21 @@ export const Contact = () => {
       <div className="form__inputs">
         <form ref={form} onSubmit={sendEmail}>
           <div className="form__group">
-            <label>Nom</label>
-            <input type="text" name="user_name" required />
+            <label htmlFor="user_name">Nom</label>
+            <input type="text" name="user_name" id="user_name" required />
           </div>
           <div className="form__group">
-            <label>Email</label>
-            <input type="email" name="user_email" required />
+            <label htmlFor="user_email">Email</label>
+            <input type="email" name="user_email" id="user_email" required />
           </div>
           <div className="form__group">
-            <label>Message</label>
-            <textarea name="message" required />
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" required />
           </div>
           <div className="form__button">
-            <button
-              type="submit"
-              className="form__button--value"
-            >Envoyer</button>
+            <button type="submit" className="form__button--value">
+              Envoyer
+            </button>
           </div>
         </form>
       </div>

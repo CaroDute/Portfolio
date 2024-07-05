@@ -1,7 +1,13 @@
 import { useState } from "react";
 
 /* eslint-disable react/prop-types */
-const ProjectsCard = ({ cover, title, openModal, projectId }) => {
+const ProjectsCard = ({
+  cover,
+  title,
+  coverDescription,
+  openModal,
+  projectId,
+}) => {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -13,9 +19,9 @@ const ProjectsCard = ({ cover, title, openModal, projectId }) => {
   };
 
   const handleClick = (e) => {
-    e.preventDefault()
-    openModal(projectId)
-  }
+    e.preventDefault();
+    openModal(projectId);
+  };
 
   return (
     <>
@@ -28,7 +34,7 @@ const ProjectsCard = ({ cover, title, openModal, projectId }) => {
         <div className="cards__single">
           <div className="cards__single--content">
             <div className="cards__single--img">
-              <img src={cover} alt={title} />
+              <img src={cover} alt={coverDescription} />
             </div>
             <div className="cards__single--details">
               {hovered ? (
