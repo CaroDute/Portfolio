@@ -4,18 +4,17 @@
   margin: auto;
   padding-top: 100px;
   padding-bottom: 40px;
-  position: relative;
+  display: flex;
+  align-items: center;
 
   &__image {
     img {
       width: 450px;
       border-radius: 80px;
-      filter: blur(2px);
     }
   }
 
   &__text {
-    position: absolute;
     left: 385px;
     top: 130px;
     line-height: 1.7;
