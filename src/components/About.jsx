@@ -7,7 +7,7 @@ const About = () => {
     <>
       <div id="aboutMe" className="about">
         <div className="about__image">
-          <img src={BureauImage} alt="Photo de moi à mon bureau" />
+          <img src={BureauImage} alt="Photo de moi à mon bureau" width="450" height="auto"/>
         </div>
         <div className="about__text">
           <h1 className="about__text--title">Je m'appelle Caroline, </h1>
