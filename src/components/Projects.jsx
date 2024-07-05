@@ -43,6 +43,7 @@ const Projects = () => {
             <ProjectsCard
               cover={project.cover}
               title={project.title}
+              coverDescription={project.coverDescription}
               openModal={() => openModal(project.id)}
               projectId={project.id}
             />
@@ -54,4 +55,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
