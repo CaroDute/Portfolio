@@ -28,13 +28,13 @@ const Skills = () => {
               <img
                 key={index}
                 src={skill.img}
-                alt={skill.name}
+                alt={skill.imgAlt}
                 data-name={skill.name}
                 style={{ animationDelay: `${index * 1.9}s` }}
               />
             </div>
             <div className="skills__names">
-              <p className="skills__name">{skill.name}</p>
+              <h3 className="skills__name">{skill.name}</h3>
             </div>
           </div>
         ))}
