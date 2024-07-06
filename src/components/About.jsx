@@ -46,7 +46,7 @@ const About = () => {
         <a href="#projets">
           <img
             src={FlecheJaune}
-            alt="fleche bleu"
+            alt="fleche jaune"
             className="container__arrow animate__animated animate__flip"
           />
         </a>
