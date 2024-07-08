@@ -12,8 +12,22 @@
 @import "/src/assets/sass/components/skills.scss";
 @import "/src/assets/sass/components/contact.scss";
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/public/fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  font-family: "Roboto mono", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
