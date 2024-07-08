@@ -12,6 +12,7 @@ const About = () => {
             alt="Photo de moi à mon bureau"
             width="450"
             height="auto"
+            loading="lazy"
           />
         </div>
         <div className="about__text">
@@ -48,6 +49,7 @@ const About = () => {
             src={FlecheJaune}
             alt="fleche jaune"
             className="container__arrow animate__animated animate__flip"
+            loading="lazy"
           />
         </a>
       </div>

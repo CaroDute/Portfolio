@@ -18,6 +18,7 @@ const ModalProject = ({ project, closeModal }) => {
               src={project.cover}
               alt={project.title}
               className="modal__img--desktop"
+              loading="lazy"
             />
           </div>
         </div>
@@ -29,7 +30,13 @@ const ModalProject = ({ project, closeModal }) => {
             <h3>{project.skillsTitle}</h3>
             <div className="modal__details--skills-images">
               {project.skills.map((lang, index) => (
-                <img key={index} src={lang.iconUrl} alt={lang.name} style={{ animationDelay: `${index * 1}s` }}/>
+                <img
+                  key={index}
+                  src={lang.iconUrl}
+                  alt={lang.name}
+                  loading="lazy"
+                  style={{ animationDelay: `${index * 1}s` }}
+                />
               ))}
             </div>
           </div>
