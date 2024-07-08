@@ -10,8 +10,6 @@ const About = () => {
           <img
             src={BureauImage}
             alt="Photo de moi à mon bureau"
-            width="450"
-            height="auto"
             loading="lazy"
           />
         </div>
