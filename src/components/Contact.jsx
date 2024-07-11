@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-  const form = useRef();
+  const form = useRef(); // permet de récupérer les informations du formulaire directement.
   const [EmailSendSuccess, setemailSendSuccess] = useState(false);
   const [emailSendError, setEmailSendError] = useState(false);
 
