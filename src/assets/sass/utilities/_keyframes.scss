@@ -53,63 +53,6 @@
   }
 }
 
-@keyframes moveSkillsModale {
-  0% {
-    opacity: 0;
-    transform: translate(0, -50px); /* Position de départ */ 
-  }
-  20% {
-    opacity: 1;
-    transform: translate(0, 40px);
-  }
-  40% {
-    opacity: 1;
-    transform: translate(-90px,-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(0px, -115px);
-  }
-  80% {
-    opacity: 0.5;
-    transform: translate(115px, -50px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(0, -50px); /* Retour à la position de départ */
-  }
-}
-
-// Medias Queries //
-
-@keyframes moveSkillsModaleMobile {
-  0% {
-    opacity: 0;
-    transform: translate(-4px, -50px); /* Position de départ */ 
-  }
-  20% {
-    opacity: 1;
-    transform: translate(-10px, 20px);
-  }
-  40% {
-    opacity: 1;
-    transform: translate(-70px,-50px);
-  }
-  60% {
-    opacity: 1;
-    transform: translate(-8px, -90px);
-  }
-  80% {
-    opacity: 0.5;
-    transform: translate(0px, -34px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(0, -50px); /* Retour à la position de départ */
-  }
-}
-
-
 @keyframes rotateSkills {
   0% {
     transform: rotate(0deg) translateX(250px) rotate(0deg);
@@ -144,14 +87,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes rotateGeometric {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }

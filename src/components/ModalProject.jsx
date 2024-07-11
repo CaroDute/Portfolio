@@ -29,13 +29,12 @@ const ModalProject = ({ project, closeModal }) => {
           <div className="modal__details--skills">
             <h3>{project.skillsTitle}</h3>
             <div className="modal__details--skills-images">
-              {project.skills.map((lang, index) => (
+              {project.skills.map((skill, index) => (
                 <img
                   key={index}
-                  src={lang.iconUrl}
-                  alt={lang.name}
+                  src={skill.iconUrl}
+                  alt={skill.name}
                   loading="lazy"
-                  style={{ animationDelay: `${index * 1}s` }}
                 />
               ))}
             </div>

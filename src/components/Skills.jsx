@@ -14,6 +14,7 @@ const Skills = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  
   return (
     <div className="skills" id="skills">
       <div className="skills__presentation">

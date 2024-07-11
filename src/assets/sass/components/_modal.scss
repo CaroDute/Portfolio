@@ -49,10 +49,10 @@
     margin-bottom: 20px;
 
     img {
-      max-width: 80%; /* Ajuste la largeur maximale à 100% de son conteneur */
-      max-height: 80vh; /* Ajuste la hauteur maximale à 80% de la hauteur de la fenêtre */
-      width: auto; /* Maintient le rapport d'aspect en largeur */
-      height: auto; /* Maintient le rapport d'aspect en hauteur */
+      max-width: 80%;
+      max-height: 80vh;
+      width: auto;
+      height: auto;
       border-radius: 20px;
     }
   }
@@ -69,13 +69,13 @@
     &--description {
       max-width: 50%;
       min-width: 50%;
-      font-size: 2vh;
+      font-size: 1.5vh;
       padding-left: 20px;
     }
 
     &--skills {
       display: flex;
-      min-height: 20vh;
+      min-height: 15vh;
       justify-content: center;
       align-items: center;
       flex-direction: column;
